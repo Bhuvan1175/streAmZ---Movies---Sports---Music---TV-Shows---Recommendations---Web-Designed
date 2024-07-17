@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>streAmZ The Endless Entertainment</title>
+    <link rel="stylesheet" href="fun.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#">stre<span id="A-color">A</span>m<span id="Z-color">Z</span></a>
+            </div>
+            <div class="search-container">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <input type="text" id="search-bar" placeholder="Search for Movies, Shows, Channels etc.">
+                <submit>
+                    <a href="#"><i class="fa-solid fa-microphone" style="color: #ffffff;"></i></a>
+                </submit>
+            </div>
+            <div class="buy-plan">
+                <button class="buy-plan-btn">
+                    <i class="fa-solid fa-crown"></i>BUY PLAN
+                </button>
+            </div>
+
+            <div class="sidebar">
+                <input type="checkbox" id="check" />
+                <div class="btn_one">
+                    <label for="check" style="color: white">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </div>
+                <div class="sidebar_menu">
+                    <div class="logo-two">
+                        <a href="#" style="text-decoration: none;">stre<span id="A-color">A</span>m<span
+                                id="Z-color">Z</span></a>
+                    </div>
+                    <div class="btn_two">
+                        <label for="check">
+                            <i class="fa-solid fa-xmark"></i>
+                        </label>
+                    </div>
+                    <div class="login-signup">
+                        <button class="login">Login</button>
+                        <button class="signup">Sign up for Free</button>
+                    </div>
+                    <div class="side-nav-bar">
+                        <ul>
+                            <li id="home">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <div class="dropdown-1">
+                                    <div class="icon-place-1">
+                                        <button class="dropdown-button-1" id="Explore">Explore</button>
+                                        <i class="fa-solid fa-chevron-down" id="downicon-1"
+                                            onclick="changeIcon(this)"></i>
+                                        <!-- <i class="fa-solid fa-play" id="downicon-1"></i> -->
+                                    </div>
+
+                                    <div class="dropdown-content-1">
+                                        <a href="#" id="anchor-font">TV Shows</a>
+                                        <a href="#" id="anchor-font">Movies</a>
+                                        <a href="#" id="anchor-font">Premium</a>
+                                        <a href="#" id="anchor-font">News</a>
+                                        <a href="#" id="anchor-font">Web Series</a>
+                                        <a href="#" id="anchor-font">Rent</a>
+                                        <a href="#" id="anchor-font">Music</a>
+                                        <a href="#" id="anchor-font">Sports</a>
+                                        <a href="#" id="anchor-font">Kids</a>
+                                        <a href="#" id="anchor-font">Videos</a>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown-2">
+                                    <div class="icon-place-2">
+                                        <button class="dropdown-button-2" id="Plan">Plan</button>
+                                        <i class="fa-solid fa-chevron-down" id="downicon-2"
+                                            onclick="changeIcon(this)"></i>
+                                        <!-- <i class="fa-solid fa-play" id="downicon-2"></i> -->
+                                    </div>
+
+                                    <div class="dropdown-content-2">
+                                        <a href="#" id="anchor-font">Buy Plan</a>
+                                        <a href="#" id="anchor-font">Have a Prepaid Code ? </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown-2">
+                                    <div class="icon-place-2">
+                                        <button class="dropdown-button-2" id="Setting">Setting</button>
+                                        <i class="fa-solid fa-chevron-down" id="downicon-2"
+                                            onclick="changeIcon(this)"></i>
+                                        <!-- <i class="fa-solid fa-play" id="downicon-2"></i> -->
+                                    </div>
+
+                                    <div class="dropdown-content-2">
+                                        <a href="#" id="anchor-font">Language</a>
+                                        <a href="#" id="anchor-font">Reset setting to default </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="dropdown-2">
+                                    <div class="icon-place-2">
+                                        <button class="dropdown-button-2" id="Info">Info</button>
+                                        <i class="fa-solid fa-chevron-down" id="downicon-2"
+                                            onclick="changeIcon(this)"></i>
+                                        <!-- <i class="fa-solid fa-play" id="downicon-2"></i> -->
+                                    </div>
+
+                                    <div class="dropdown-content-2">
+                                        <a href="#" id="anchor-font">About Us</a>
+                                        <a href="#" id="anchor-font">Help Center</a>
+                                        <a href="#" id="anchor-font">Contents Redressal Mechanism</a>
+                                        <a href="#" id="anchor-font">Terms of Use</a>
+                                        <a href="#" id="anchor-font">Privacy Policy</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebar-footer">
+                                    <p><a href="#" style="text-decoration: none;">@ stre<span
+                                                id="A-color">A</span>m<span id="Z-color">Z</span></a> Website designed
+                                        by Bhuvaneshwar </p>
+                                </div>
+                            </li>
+                    </div>
+
+                    <!-- <li>
+                                <a href="#">TV Shows</a>
+                            </li>
+                            <li>
+                                <a href="#">Movies</a>
+                            </li>
+                            <li>
+                                <a href="#">Premium</a>
+                            </li>
+                            <li>
+                                <a href="#">News</a>
+                            </li>
+                            <li>
+                                <a href="#">Web Series</a>
+                            </li>
+                            <li>
+                                <a href="#">Rent</a>
+                            </li>
+                            <li>
+                                <a href="#">Music</a>
+                            </li>
+                            <li>
+                                <a href="#">Sports</a>
+                            </li>
+                            <li>
+                                <a href="#">Kids</a>
+                            </li>
+                            <li>
+                                <a href="#">Videos</a>
+                            </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-container">
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">TV Shows</a>
+                </li>
+                <li>
+                    <a href="#">Movies</a>
+                </li>
+                <li>
+                    <a href="#">Premium</a>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <a href="#">Web Series</a>
+                </li>
+                <li>
+                    <a href="#">Rent</a>
+                </li>
+                <li>
+                    <a href="#">Music</a>
+                </li>
+                <li>
+                    <a href="#">Sports</a>
+                </li>
+                <li>
+                    <a href="#">Kids</a>
+                </li>
+                <li>
+                    <a href="#">Videos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script src="fun.js"></script>
+</body>
+
+</html>
