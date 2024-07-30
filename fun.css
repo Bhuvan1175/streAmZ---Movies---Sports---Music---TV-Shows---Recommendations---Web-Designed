@@ -247,7 +247,9 @@ submit {
   font-weight: 600;
   letter-spacing: 0.5px;
 }
-
+.navbar ul li a:hover{
+  color: goldenrod;
+}
 .navbar ul li a:after {
   content: "";
   position: absolute;
@@ -462,6 +464,7 @@ submit {
 }
 
 .items {
+  position: relative;;
   flex: 0 0 auto;
 }
 
@@ -474,16 +477,78 @@ submit {
 
 .items h1{
   position: absolute;
-  bottom: 40px;
+  bottom: 110px;
   left: 8%;
-  background-color:black;
-  opacity: 0.5;
   border-radius: 10px;
-  color: white;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
   padding: 10px;
   font-size: 25px;
 }
 
+.buy-plan-btn-items {
+  border: 1px solid rgb(130, 48, 198);
+  background-color: rgb(130, 48, 198);
+  border-radius: 7px;
+  max-width: 6rem;
+  position: absolute;
+  bottom: 61px;
+  left: 20%;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.buy-plan-btn-items > i {
+  background: transparent;
+  padding: 10px 6px;
+}
+
+.buy-plan-btn-items:hover {
+  transition: all 0.1s linear;
+  background-color: rgb(57, 14, 89);
+}
+
+.watch-items {
+  position: absolute;
+  bottom:60px;
+  left: 9%;
+  max-width: 8rem;
+  background-color: rgb(53,46,47,0.9);
+  border-radius: 8px;
+  font-size: 15px;
+}
+.watch-items:hover{
+  background-color: #ffffff;
+  transition: all 1s;
+}
+.Watch {
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background-color: transparent;
+  max-width: 8rem;
+}
+.watch-items button:hover{
+  color: #111;
+}
+.watch-items .Watch a{
+  background-color: transparent;
+}
+
+.watch-items .Watch i{
+  background-color: transparent;
+  margin-right: 10px;
+}
+/* button i:hover{
+  color: #111;
+} */
+
+.watch-items .Watch:hover i {
+  color: #111;
+}
 .button-slide {
   position: absolute;
   bottom: 200px; 
@@ -524,7 +589,7 @@ submit {
   border-radius: 20px; /* Rounded dots */
   background-color: rgb(255, 255, 255);
   opacity: 0.8;
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 }
 
 .dots li.active {
