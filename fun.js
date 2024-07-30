@@ -43,3 +43,66 @@ document.querySelectorAll(".dropdown-button-2, #downicon-2").forEach(function(el
         }
     });
 });
+
+
+let list = document.querySelector(".slider .list");
+let items = document.querySelectorAll(".slider .list .items");
+let dots = document.querySelectorAll(".slider .dots li");
+let prev = document.getElementById('prev');
+let next = document.getElementById('next');
+
+let active = 0;
+
+function reloadSlider() {
+    let checkLeft = items[active].offsetLeft;
+    list.style.transform = `translateX(-${checkLeft}px)`; 
+    let lastActiveDot = document.querySelector(".slider .dots li.active");
+    if (lastActiveDot) lastActiveDot.classList.remove('active');
+    dots[active].classList.add('active');
+    clearInterval(refreshSlider);
+    refreshSlider = setInterval(() => {
+        next.click();
+    }, 30000);
+}
+
+next.addEventListener('click', function() {
+    if (active < items.length - 1) {
+        active++;
+        reloadSlider();
+    }
+});
+
+prev.addEventListener('click', function() {
+    if (active > 0) {
+        active--;
+        reloadSlider();
+    }
+});
+
+dots.forEach((li, key) => {
+    li.addEventListener('click', function() {
+        active = key;
+        reloadSlider();
+    });
+});
+
+let refreshSlider = setInterval(() => {
+    next.click();
+}, 30000);
+
+
+prev.addEventListener('click', function() {
+    if (active > 0) {
+        active--;
+        reloadSlider();
+    }
+});
+
+
+dots.forEach((li,key) => {
+    li.addEventListener('click',function(){
+        active = key;
+        reloadSlider();
+    })
+})
+
