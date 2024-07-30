@@ -62,7 +62,7 @@ function reloadSlider() {
     clearInterval(refreshSlider);
     refreshSlider = setInterval(() => {
         next.click();
-    }, 30000);
+    }, 5000);
 }
 
 next.addEventListener('click', function() {
@@ -88,15 +88,8 @@ dots.forEach((li, key) => {
 
 let refreshSlider = setInterval(() => {
     next.click();
-}, 30000);
+}, 5000);
 
-
-prev.addEventListener('click', function() {
-    if (active > 0) {
-        active--;
-        reloadSlider();
-    }
-});
 
 
 dots.forEach((li,key) => {
