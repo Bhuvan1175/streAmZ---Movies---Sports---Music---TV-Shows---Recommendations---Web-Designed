@@ -1,0 +1,142 @@
+body {
+  background-color: rgb(25, 10, 39);
+}
+
+.cast-popup {
+  background-color: rgb(0, 0, 0, 0.3);
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.cast-popup.open {
+  display: block;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.cast-popup-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 1px 4px rgba(12, 12, 12, 0.3);
+  padding: 15px 25px;
+  text-align: center;
+  height: 520px;
+  width: 340px;
+  position: relative;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cast-popup-content h1 {
+  color: #000000;
+}
+.cast-popup-content p {
+  line-height: 25px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.close-cast {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  background-color: none;
+  border: none;
+  background-color: transparent;
+  color: #111;
+  font-size: 20px;
+  font-weight: 900;
+  width: 10px;
+  transition: all 1s;
+}
+
+.logo-two {
+  background-color: transparent;
+  cursor: pointer;
+}
+#A-color {
+  color: #ffd700;
+  font-family: "Bodoni Moda SC", serif;
+}
+
+#Z-color {
+  color: #ff4500;
+  font-family: "Bodoni Moda SC", serif;
+}
+
+#normal {
+  color: #292929;
+}
+
+.icon1-login img {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 80%;
+  margin: 10px;
+}
+.hor {
+    position: relative;
+    text-align: center;
+    margin: 30px; 
+}
+
+.hor hr {
+    border: 0;
+    border-top: 2px solid #484848; 
+    width: 100%;
+    margin: 0 auto; 
+    position: relative;
+    z-index: 1;
+}
+
+.hor .text {
+    position: absolute;
+    left: 49%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 80%;
+    background:rgba(255, 255, 255, 0.9); 
+    padding: 8px; 
+    z-index: 2;
+    font-size: 20px; 
+    color: #000; 
+    font-weight: 900;
+}
+
+.inp-login input{
+    padding: 15px;
+    margin: 10px;
+    width: 80%;
+    background-color:transparent;
+    border: 1px solid black;
+    opacity: 0.6;
+    border-radius: 8px;
+}
+.inp-login input:hover{
+    border: 2px solid rgb(130,48,198,0.5);
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.done button{
+    margin: 12px;
+    padding: 15px;
+    width: 90%;
+    border-radius: 8px;
+    border: none;
+    background-color:rgb(192,151,226);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.done button:hover {
+    background-color: rgb(130,48,198);
+}
