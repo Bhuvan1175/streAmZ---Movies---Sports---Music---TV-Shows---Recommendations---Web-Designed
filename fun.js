@@ -70,6 +70,7 @@ next.addEventListener('click', function() {
         active++;
         reloadSlider();
     }
+    
 });
 
 prev.addEventListener('click', function() {
@@ -99,3 +100,17 @@ dots.forEach((li,key) => {
     })
 })
 
+const openbtn = document.querySelector("#img1-cast");
+const closebtn = document.querySelector(".close-cast");
+const castpopup = document.querySelector(".cast-popup");
+openbtn.addEventListener("click", function() {
+    castpopup.style.backgroundColor="black";
+    console.log("Open button clicked");
+    castpopup.classList.add("open");
+    clearInterval(refreshSlider);
+});
+
+closebtn.addEventListener("click", function() {
+    console.log("Close button clicked");
+    castpopup.classList.remove("open");
+});
